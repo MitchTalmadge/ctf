@@ -1,59 +1,47 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.209.6/containers/javascript-node-mongo
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-docker-compose
 {
-	"name": "Dev Container",
+	"customizations": {
+			"vscode": {
+					"extensions": [
+							"betterthantomorrow.calva",
+							"bmewburn.vscode-intelephense-client",
+							"christian-kohler.npm-intellisense",
+							"codezombiech.gitignore",
+							"dbaeumer.vscode-eslint",
+							"donjayamanne.python-environment-manager",
+							"donjayamanne.python-extension-pack",
+							"eamodio.gitlens",
+							"EditorConfig.EditorConfig",
+							"eg2.vscode-npm-script",
+							"esbenp.prettier-vscode",
+							"foxundermoon.shell-format",
+							"GitHub.copilot",
+							"golang.go",
+							"Gruntfuggly.todo-tree",
+							"James-Yu.latex-workshop",
+							"jbockle.jbockle-format-files",
+							"mhutchie.git-graph",
+							"ms-python.isort",
+							"ms-toolsai.jupyter",
+							"ms-vscode.cpptools",
+							"ms-vscode.hexeditor",
+							"platformio.platformio-ide",
+							"redhat.vscode-xml",
+							"redhat.vscode-yaml",
+							"richie5um2.vscode-sort-json",
+							"shd101wyy.markdown-preview-enhanced",
+							"sibiraj-s.vscode-scss-formatter",
+							"streetsidesoftware.code-spell-checker",
+							"tombonnike.vscode-status-bar-format-toggle",
+							"VisualStudioExptTeam.vscodeintellicode",
+							"xdebug.php-debug",
+							"yzhang.markdown-all-in-one"
+					]
+			}
+	},
 	"dockerComposeFile": "docker-compose.yml",
+	"name": "Dev Container",
 	"service": "dev",
-	"workspaceFolder": "/workspace",
-
-	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"christian-kohler.npm-intellisense",
-		"codezombiech.gitignore",
-		"dbaeumer.vscode-eslint",
-		"eamodio.gitlens",
-		"EditorConfig.EditorConfig",
-		"eg2.vscode-npm-script",
-		"esbenp.prettier-vscode",
-		"GitHub.copilot",
-		"Gruntfuggly.todo-tree",
-		"jbockle.jbockle-format-files",
-		"redhat.fabric8-analytics",
-		"redhat.vscode-xml",
-		"redhat.vscode-yaml",
-		"shd101wyy.markdown-preview-enhanced",
-		"sibiraj-s.vscode-scss-formatter",
-		"streetsidesoftware.code-spell-checker",
-		"tombonnike.vscode-status-bar-format-toggle",
-		"VisualStudioExptTeam.vscodeintellicode",
-		"yzhang.markdown-all-in-one",
-		"donjayamanne.python-extension-pack",
-		"donjayamanne.python-environment-manager",
-		"ms-vscode.cpptools",
-		"betterthantomorrow.calva",
-		"streetsidesoftware.code-spell-checker",
-		"mhutchie.git-graph",
-		"golang.go",
-		"ms-vscode.hexeditor",
-		"ms-python.isort",
-		"ms-toolsai.jupyter",
-		"James-Yu.latex-workshop",
-		"bmewburn.vscode-intelephense-client",
-		"xdebug.php-debug",
-		"platformio.platformio-ide",
-		"foxundermoon.shell-format",
-		"richie5um2.vscode-sort-json"
-	],
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
-
-	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	//"remoteUser": "node"
+	"workspaceFolder": "/workspace"
 }
